@@ -1,0 +1,138 @@
+{
+  "agents": {
+    "idea_intake": {
+      "agent_id": "69ec536725ead3c1187be8df",
+      "name": "Idea Intake Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "independent",
+      "response_schema": "response_schemas/idea_intake_agent_response.json"
+    },
+    "business_licensing": {
+      "agent_id": "69ec53740263199051be3414",
+      "name": "Business & Licensing Research Agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "type": "sub_agent",
+      "parent": "compliance_orchestrator",
+      "response_schema": "response_schemas/business_licensing_research_agent_response.json"
+    },
+    "legal_compliance": {
+      "agent_id": "69ec537f683f81d0be89f263",
+      "name": "Legal & Compliance Standards Agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "type": "sub_agent",
+      "parent": "compliance_orchestrator",
+      "response_schema": "response_schemas/legal_compliance_standards_agent_response.json"
+    },
+    "ip_patent": {
+      "agent_id": "69ec538b6433c243c172357f",
+      "name": "IP & Patent Research Agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "type": "sub_agent",
+      "parent": "compliance_orchestrator",
+      "response_schema": "response_schemas/ip_patent_research_agent_response.json"
+    },
+    "regulatory_risk": {
+      "agent_id": "69ec5399950816878e84f10e",
+      "name": "Regulatory Risk & Schemes Agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "type": "sub_agent",
+      "parent": "compliance_orchestrator",
+      "response_schema": "response_schemas/regulatory_risk_schemes_agent_response.json"
+    },
+    "compliance_orchestrator": {
+      "agent_id": "69ec53dc25ead3c1187be8f9",
+      "name": "Compliance Research Orchestrator",
+      "provider": "openai",
+      "model": "gpt-5.1",
+      "type": "manager",
+      "managed_agents": ["69ec53740263199051be3414", "69ec537f683f81d0be89f263", "69ec538b6433c243c172357f", "69ec5399950816878e84f10e"],
+      "response_schema": "response_schemas/compliance_research_orchestrator_response.json"
+    },
+    "entity_formation": {
+      "agent_id": "69ec53a60263199051be3416",
+      "name": "Entity Formation Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "sub_agent",
+      "parent": "execution_orchestrator",
+      "response_schema": "response_schemas/entity_formation_agent_response.json"
+    },
+    "licensing_permits": {
+      "agent_id": "69ec53b2e78e19fa5bc64cff",
+      "name": "Licensing & Permits Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "sub_agent",
+      "parent": "execution_orchestrator",
+      "response_schema": "response_schemas/licensing_permits_agent_response.json"
+    },
+    "tax_registration": {
+      "agent_id": "69ec53bd6433c243c1723588",
+      "name": "Tax Registration Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "sub_agent",
+      "parent": "execution_orchestrator",
+      "response_schema": "response_schemas/tax_registration_agent_response.json"
+    },
+    "ip_filing": {
+      "agent_id": "69ec53c8dcdea9592ddcd8fc",
+      "name": "IP Filing Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "sub_agent",
+      "parent": "execution_orchestrator",
+      "response_schema": "response_schemas/ip_filing_agent_response.json"
+    },
+    "execution_orchestrator": {
+      "agent_id": "69ec53eba57e78ed3c81ed33",
+      "name": "Execution Orchestrator",
+      "provider": "openai",
+      "model": "gpt-5.1",
+      "type": "manager",
+      "managed_agents": ["69ec53a60263199051be3416", "69ec53b2e78e19fa5bc64cff", "69ec53bd6433c243c1723588", "69ec53c8dcdea9592ddcd8fc"],
+      "response_schema": "response_schemas/execution_orchestrator_response.json"
+    },
+    "filing_guidance": {
+      "agent_id": "69ec53fba57e78ed3c81ed37",
+      "name": "Filing & Guidance Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "independent",
+      "response_schema": "response_schemas/filing_guidance_agent_response.json"
+    },
+    "financial_setup": {
+      "agent_id": "69ec54087da557a418920bc0",
+      "name": "Financial Setup Agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "type": "independent",
+      "response_schema": "response_schemas/financial_setup_agent_response.json"
+    },
+    "platform_builder": {
+      "agent_id": "69ec5416faf2562dd1132bea",
+      "name": "Platform Builder Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "independent",
+      "response_schema": "response_schemas/platform_builder_agent_response.json"
+    },
+    "support_companion": {
+      "agent_id": "69ec5421eac603bbd2d82e8c",
+      "name": "Support Companion Agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "type": "independent",
+      "response_schema": "response_schemas/support_companion_agent_response.json"
+    }
+  },
+  "total_agents": 15,
+  "managers": 2,
+  "sub_agents": 8,
+  "independent_agents": 5
+}

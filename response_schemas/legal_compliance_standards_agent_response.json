@@ -1,0 +1,38 @@
+{
+  "agent_name": "Legal & Compliance Standards Agent",
+  "agent_id": "69ec537f683f81d0be89f263",
+  "description": "Identifies ongoing legal obligations including tax filing, labor law, data privacy, and annual filings",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "obligations": [
+      {
+        "name": "string",
+        "category": "string",
+        "frequency": "string",
+        "description": "string",
+        "penalties": "string",
+        "responsible_authority": "string",
+        "is_mandatory": true
+      }
+    ],
+    "summary": "string",
+    "critical_deadlines": "string"
+  },
+  "example_response": {
+    "obligations": [
+      {
+        "name": "sample string",
+        "category": "sample string",
+        "frequency": "sample string",
+        "description": "sample string",
+        "penalties": "sample string",
+        "responsible_authority": "sample string",
+        "is_mandatory": true
+      }
+    ],
+    "summary": "sample string",
+    "critical_deadlines": "sample string"
+  }
+}

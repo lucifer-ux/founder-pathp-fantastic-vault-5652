@@ -1,0 +1,40 @@
+{
+  "agent_name": "Idea Intake Agent",
+  "agent_id": "69ec536725ead3c1187be8df",
+  "description": "Conversationally captures business idea, asks clarifying questions, generates structured Business Brief",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "business_brief": {
+      "business_name": "string",
+      "business_type": "string",
+      "target_region": "string",
+      "revenue_model": "string",
+      "recommended_structure": "string",
+      "structure_reasoning": "string",
+      "target_market": "string",
+      "key_products_services": "string",
+      "initial_compliance_considerations": "string"
+    },
+    "message": "string",
+    "questions": ["string"],
+    "stage": "string"
+  },
+  "example_response": {
+    "business_brief": {
+      "business_name": "sample string",
+      "business_type": "sample string",
+      "target_region": "sample string",
+      "revenue_model": "sample string",
+      "recommended_structure": "sample string",
+      "structure_reasoning": "sample string",
+      "target_market": "sample string",
+      "key_products_services": "sample string",
+      "initial_compliance_considerations": "sample string"
+    },
+    "message": "sample string",
+    "questions": ["sample string"],
+    "stage": "sample string"
+  }
+}

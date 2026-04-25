@@ -1,0 +1,46 @@
+{
+  "agent_name": "Tax Registration Agent",
+  "agent_id": "69ec53bd6433c243c1723588",
+  "description": "Handles all tax registrations with checklists, deadlines, and delay implications",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "tasks": [
+      {
+        "task_name": "string",
+        "category": "string",
+        "phase": "string",
+        "description": "string",
+        "steps": ["string"],
+        "documents_needed": ["string"],
+        "estimated_cost": "string",
+        "timeline": "string",
+        "deadline": "string",
+        "penalty_for_delay": "string",
+        "is_online": true
+      }
+    ],
+    "summary": "string",
+    "compliance_calendar": "string"
+  },
+  "example_response": {
+    "tasks": [
+      {
+        "task_name": "sample string",
+        "category": "Tax",
+        "phase": "Before Launch",
+        "description": "sample string",
+        "steps": ["sample string"],
+        "documents_needed": ["sample string"],
+        "estimated_cost": "sample string",
+        "timeline": "sample string",
+        "deadline": "sample string",
+        "penalty_for_delay": "sample string",
+        "is_online": true
+      }
+    ],
+    "summary": "sample string",
+    "compliance_calendar": "sample string"
+  }
+}

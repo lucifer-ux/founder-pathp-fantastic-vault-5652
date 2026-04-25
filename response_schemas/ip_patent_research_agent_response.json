@@ -1,0 +1,40 @@
+{
+  "agent_name": "IP & Patent Research Agent",
+  "agent_id": "69ec538b6433c243c172357f",
+  "description": "Analyzes IP opportunities and risks including trademark availability, patent eligibility, and filing recommendations",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "ip_analysis": [
+      {
+        "type": "string",
+        "item": "string",
+        "status": "string",
+        "recommendation": "string",
+        "estimated_cost": "string",
+        "timeline": "string",
+        "risk_level": "string"
+      }
+    ],
+    "summary": "string",
+    "urgent_actions": "string",
+    "total_estimated_cost": "string"
+  },
+  "example_response": {
+    "ip_analysis": [
+      {
+        "type": "sample string",
+        "item": "sample string",
+        "status": "sample string",
+        "recommendation": "sample string",
+        "estimated_cost": "sample string",
+        "timeline": "sample string",
+        "risk_level": "sample string"
+      }
+    ],
+    "summary": "sample string",
+    "urgent_actions": "sample string",
+    "total_estimated_cost": "sample string"
+  }
+}

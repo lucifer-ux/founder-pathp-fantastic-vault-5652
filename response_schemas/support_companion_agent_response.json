@@ -1,0 +1,28 @@
+{
+  "agent_name": "Support Companion Agent",
+  "agent_id": "69ec5421eac603bbd2d82e8c",
+  "description": "Always-on contextual assistant that answers compliance, legal, and financial questions in plain language",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "answer": "string",
+    "tips": [
+      "string"
+    ],
+    "related_topics": [
+      "string"
+    ],
+    "stage_context": "string"
+  },
+  "example_response": {
+    "answer": "sample string",
+    "tips": [
+      "sample string"
+    ],
+    "related_topics": [
+      "sample string"
+    ],
+    "stage_context": "sample string"
+  }
+}

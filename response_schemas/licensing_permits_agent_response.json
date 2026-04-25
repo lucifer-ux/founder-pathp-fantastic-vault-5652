@@ -1,0 +1,44 @@
+{
+  "agent_name": "Licensing & Permits Agent",
+  "agent_id": "69ec53b2e78e19fa5bc64cff",
+  "description": "Creates execution roadmap for every mandatory license with documents, portals, process, fees, and timelines",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "tasks": [
+      {
+        "task_name": "string",
+        "category": "string",
+        "phase": "string",
+        "description": "string",
+        "steps": ["string"],
+        "documents_needed": ["string"],
+        "portal_url": "string",
+        "estimated_cost": "string",
+        "timeline": "string",
+        "is_online": true,
+        "rejection_tips": "string"
+      }
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "tasks": [
+      {
+        "task_name": "sample string",
+        "category": "License",
+        "phase": "Before Launch",
+        "description": "sample string",
+        "steps": ["sample string"],
+        "documents_needed": ["sample string"],
+        "portal_url": "sample string",
+        "estimated_cost": "sample string",
+        "timeline": "sample string",
+        "is_online": true,
+        "rejection_tips": "sample string"
+      }
+    ],
+    "summary": "sample string"
+  }
+}

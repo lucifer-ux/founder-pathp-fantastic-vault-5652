@@ -1,0 +1,41 @@
+{
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "User Input", "nodeCategory": "input"},
+      {"id": "idea_intake", "type": "Agent", "label": "Idea Intake Agent (Sage)", "nodeCategory": "agent", "agent_id": "69ec536725ead3c1187be8df"},
+      {"id": "compliance_orchestrator", "type": "Agent", "label": "Compliance Research Orchestrator", "nodeCategory": "agent", "agent_id": "69ec53dc25ead3c1187be8f9"},
+      {"id": "business_licensing", "type": "Agent", "label": "Business & Licensing Research", "nodeCategory": "agent", "agent_id": "69ec53740263199051be3414"},
+      {"id": "legal_compliance", "type": "Agent", "label": "Legal & Compliance Standards", "nodeCategory": "agent", "agent_id": "69ec537f683f81d0be89f263"},
+      {"id": "ip_patent", "type": "Agent", "label": "IP & Patent Research", "nodeCategory": "agent", "agent_id": "69ec538b6433c243c172357f"},
+      {"id": "regulatory_risk", "type": "Agent", "label": "Regulatory Risk & Schemes", "nodeCategory": "agent", "agent_id": "69ec5399950816878e84f10e"},
+      {"id": "execution_orchestrator", "type": "Agent", "label": "Execution Orchestrator", "nodeCategory": "agent", "agent_id": "69ec53eba57e78ed3c81ed33"},
+      {"id": "entity_formation", "type": "Agent", "label": "Entity Formation", "nodeCategory": "agent", "agent_id": "69ec53a60263199051be3416"},
+      {"id": "licensing_permits", "type": "Agent", "label": "Licensing & Permits", "nodeCategory": "agent", "agent_id": "69ec53b2e78e19fa5bc64cff"},
+      {"id": "tax_registration", "type": "Agent", "label": "Tax Registration", "nodeCategory": "agent", "agent_id": "69ec53bd6433c243c1723588"},
+      {"id": "ip_filing", "type": "Agent", "label": "IP Filing", "nodeCategory": "agent", "agent_id": "69ec53c8dcdea9592ddcd8fc"},
+      {"id": "filing_guidance", "type": "Agent", "label": "Filing & Guidance", "nodeCategory": "agent", "agent_id": "69ec53fba57e78ed3c81ed37"},
+      {"id": "financial_setup", "type": "Agent", "label": "Financial Setup", "nodeCategory": "agent", "agent_id": "69ec54087da557a418920bc0"},
+      {"id": "platform_builder", "type": "Agent", "label": "Platform Builder", "nodeCategory": "agent", "agent_id": "69ec5416faf2562dd1132bea"},
+      {"id": "support_companion", "type": "Agent", "label": "Support Companion", "nodeCategory": "agent", "agent_id": "69ec5421eac603bbd2d82e8c"},
+      {"id": "output_node", "type": "Output", "label": "Output", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "idea_intake"},
+      {"source": "idea_intake", "target": "compliance_orchestrator"},
+      {"source": "compliance_orchestrator", "target": "business_licensing"},
+      {"source": "compliance_orchestrator", "target": "legal_compliance"},
+      {"source": "compliance_orchestrator", "target": "ip_patent"},
+      {"source": "compliance_orchestrator", "target": "regulatory_risk"},
+      {"source": "compliance_orchestrator", "target": "execution_orchestrator"},
+      {"source": "execution_orchestrator", "target": "entity_formation"},
+      {"source": "execution_orchestrator", "target": "licensing_permits"},
+      {"source": "execution_orchestrator", "target": "tax_registration"},
+      {"source": "execution_orchestrator", "target": "ip_filing"},
+      {"source": "execution_orchestrator", "target": "filing_guidance"},
+      {"source": "filing_guidance", "target": "financial_setup"},
+      {"source": "financial_setup", "target": "platform_builder"},
+      {"source": "platform_builder", "target": "output_node"},
+      {"source": "input_node", "target": "support_companion"}
+    ]
+  }
+}

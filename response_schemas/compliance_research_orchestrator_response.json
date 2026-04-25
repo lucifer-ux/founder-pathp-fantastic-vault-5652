@@ -1,0 +1,36 @@
+{
+  "agent_name": "Compliance Research Orchestrator",
+  "agent_id": "69ec53dc25ead3c1187be8f9",
+  "description": "Coordinates 4 research sub-agents and assembles unified Master Compliance Report",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "master_report": {
+      "executive_summary": "string",
+      "business_registrations": "string",
+      "legal_obligations": "string",
+      "ip_analysis": "string",
+      "regulatory_requirements": "string",
+      "government_schemes": "string",
+      "total_estimated_cost": "string",
+      "total_estimated_timeline": "string",
+      "priority_actions": "string"
+    },
+    "message": "string"
+  },
+  "example_response": {
+    "master_report": {
+      "executive_summary": "sample string",
+      "business_registrations": "sample string",
+      "legal_obligations": "sample string",
+      "ip_analysis": "sample string",
+      "regulatory_requirements": "sample string",
+      "government_schemes": "sample string",
+      "total_estimated_cost": "sample string",
+      "total_estimated_timeline": "sample string",
+      "priority_actions": "sample string"
+    },
+    "message": "sample string"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "agent_name": "Financial Setup Agent",
+  "agent_id": "69ec54087da557a418920bc0",
+  "description": "Guides through business bank account setup, payment infrastructure, financial aid, and accounting tool recommendations",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "bank_account": {
+      "recommendations": "string",
+      "required_documents": "string",
+      "steps": "string",
+      "comparison": "string"
+    },
+    "payments": {
+      "recommendations": "string",
+      "comparison": "string",
+      "setup_steps": "string"
+    },
+    "financial_aid": {
+      "loans": "string",
+      "grants": "string",
+      "startup_programs": "string",
+      "eligibility_summary": "string"
+    },
+    "accounting": {
+      "recommendations": "string",
+      "comparison": "string",
+      "setup_steps": "string"
+    },
+    "message": "string"
+  },
+  "example_response": {
+    "bank_account": {
+      "recommendations": "sample string",
+      "required_documents": "sample string",
+      "steps": "sample string",
+      "comparison": "sample string"
+    },
+    "payments": {
+      "recommendations": "sample string",
+      "comparison": "sample string",
+      "setup_steps": "sample string"
+    },
+    "financial_aid": {
+      "loans": "sample string",
+      "grants": "sample string",
+      "startup_programs": "sample string",
+      "eligibility_summary": "sample string"
+    },
+    "accounting": {
+      "recommendations": "sample string",
+      "comparison": "sample string",
+      "setup_steps": "sample string"
+    },
+    "message": "sample string"
+  }
+}

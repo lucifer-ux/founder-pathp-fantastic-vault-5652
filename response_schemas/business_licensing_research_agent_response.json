@@ -1,0 +1,40 @@
+{
+  "agent_name": "Business & Licensing Research Agent",
+  "agent_id": "69ec53740263199051be3414",
+  "description": "Searches for every license, registration, and permit required for the business type and region",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "licenses": [
+      {
+        "name": "string",
+        "issuing_authority": "string",
+        "estimated_cost": "string",
+        "processing_timeline": "string",
+        "required_documents": "string",
+        "application_process": "string",
+        "urgency": "string"
+      }
+    ],
+    "summary": "string",
+    "total_estimated_cost": "string",
+    "total_estimated_timeline": "string"
+  },
+  "example_response": {
+    "licenses": [
+      {
+        "name": "sample string",
+        "issuing_authority": "sample string",
+        "estimated_cost": "sample string",
+        "processing_timeline": "sample string",
+        "required_documents": "sample string",
+        "application_process": "sample string",
+        "urgency": "sample string"
+      }
+    ],
+    "summary": "sample string",
+    "total_estimated_cost": "sample string",
+    "total_estimated_timeline": "sample string"
+  }
+}

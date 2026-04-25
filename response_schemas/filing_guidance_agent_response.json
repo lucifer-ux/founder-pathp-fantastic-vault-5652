@@ -1,0 +1,52 @@
+{
+  "agent_name": "Filing & Guidance Agent",
+  "agent_id": "69ec53fba57e78ed3c81ed37",
+  "description": "Walks user through each compliance task one at a time with online filing guidance and offline checklists",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "current_task": {
+      "task_name": "string",
+      "task_type": "string",
+      "status": "string",
+      "steps": [
+        "string"
+      ],
+      "documents_needed": [
+        "string"
+      ],
+      "reference_number": "string",
+      "tips": "string"
+    },
+    "progress": {
+      "completed": "number",
+      "total": "number",
+      "percentage": "number"
+    },
+    "message": "string",
+    "next_task_preview": "string"
+  },
+  "example_response": {
+    "current_task": {
+      "task_name": "sample string",
+      "task_type": "sample string",
+      "status": "sample string",
+      "steps": [
+        "sample string"
+      ],
+      "documents_needed": [
+        "sample string"
+      ],
+      "reference_number": "sample string",
+      "tips": "sample string"
+    },
+    "progress": {
+      "completed": 0,
+      "total": 0,
+      "percentage": 0
+    },
+    "message": "sample string",
+    "next_task_preview": "sample string"
+  }
+}

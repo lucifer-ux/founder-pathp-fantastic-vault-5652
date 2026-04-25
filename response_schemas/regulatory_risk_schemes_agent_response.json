@@ -1,0 +1,56 @@
+{
+  "agent_name": "Regulatory Risk & Schemes Agent",
+  "agent_id": "69ec5399950816878e84f10e",
+  "description": "Identifies sector regulators, environmental clearances, and eligible government schemes and subsidies",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "regulators": [
+      {
+        "name": "string",
+        "jurisdiction": "string",
+        "requirements": "string",
+        "compliance_deadline": "string"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "string",
+        "type": "string",
+        "eligibility": "string",
+        "benefit": "string",
+        "application_process": "string",
+        "deadline": "string",
+        "priority": "string"
+      }
+    ],
+    "environmental_clearances": "string",
+    "import_export_needs": "string",
+    "summary": "string"
+  },
+  "example_response": {
+    "regulators": [
+      {
+        "name": "sample string",
+        "jurisdiction": "sample string",
+        "requirements": "sample string",
+        "compliance_deadline": "sample string"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "sample string",
+        "type": "sample string",
+        "eligibility": "sample string",
+        "benefit": "sample string",
+        "application_process": "sample string",
+        "deadline": "sample string",
+        "priority": "sample string"
+      }
+    ],
+    "environmental_clearances": "sample string",
+    "import_export_needs": "sample string",
+    "summary": "sample string"
+  }
+}

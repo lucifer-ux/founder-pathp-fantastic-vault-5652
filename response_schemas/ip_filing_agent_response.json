@@ -1,0 +1,42 @@
+{
+  "agent_name": "IP Filing Agent",
+  "agent_id": "69ec53c8dcdea9592ddcd8fc",
+  "description": "Guides through trademark, patent, or copyright filing with application outlines and costs",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "tasks": [
+      {
+        "task_name": "string",
+        "category": "string",
+        "phase": "string",
+        "description": "string",
+        "steps": ["string"],
+        "documents_needed": ["string"],
+        "estimated_cost": "string",
+        "timeline": "string",
+        "is_online": true,
+        "diy_vs_professional": "string"
+      }
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "tasks": [
+      {
+        "task_name": "sample string",
+        "category": "IP",
+        "phase": "Before Launch",
+        "description": "sample string",
+        "steps": ["sample string"],
+        "documents_needed": ["sample string"],
+        "estimated_cost": "sample string",
+        "timeline": "sample string",
+        "is_online": true,
+        "diy_vs_professional": "sample string"
+      }
+    ],
+    "summary": "sample string"
+  }
+}

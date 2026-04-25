@@ -1,0 +1,36 @@
+{
+  "agent_name": "Execution Orchestrator",
+  "agent_id": "69ec53eba57e78ed3c81ed33",
+  "description": "Coordinates 4 execution sub-agents, merges task plans into unified Execution Dashboard with Before Launch / At Launch / Post Launch phases",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "execution_dashboard": {
+      "before_launch": "string",
+      "at_launch": "string",
+      "post_launch": "string",
+      "total_tasks": "string",
+      "online_tasks": "string",
+      "offline_tasks": "string",
+      "total_estimated_cost": "string",
+      "total_estimated_timeline": "string",
+      "critical_path": "string"
+    },
+    "message": "string"
+  },
+  "example_response": {
+    "execution_dashboard": {
+      "before_launch": "sample string",
+      "at_launch": "sample string",
+      "post_launch": "sample string",
+      "total_tasks": "sample string",
+      "online_tasks": "sample string",
+      "offline_tasks": "sample string",
+      "total_estimated_cost": "sample string",
+      "total_estimated_timeline": "sample string",
+      "critical_path": "sample string"
+    },
+    "message": "sample string"
+  }
+}

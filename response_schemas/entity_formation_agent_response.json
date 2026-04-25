@@ -1,0 +1,40 @@
+{
+  "agent_name": "Entity Formation Agent",
+  "agent_id": "69ec53a60263199051be3416",
+  "description": "Guides through business entity registration with structure recommendation and filing guide",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "tasks": [
+      {
+        "task_name": "string",
+        "category": "string",
+        "phase": "string",
+        "description": "string",
+        "steps": ["string"],
+        "documents_needed": ["string"],
+        "estimated_cost": "string",
+        "timeline": "string",
+        "is_online": true
+      }
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "tasks": [
+      {
+        "task_name": "sample string",
+        "category": "Entity",
+        "phase": "Before Launch",
+        "description": "sample string",
+        "steps": ["sample string"],
+        "documents_needed": ["sample string"],
+        "estimated_cost": "sample string",
+        "timeline": "sample string",
+        "is_online": true
+      }
+    ],
+    "summary": "sample string"
+  }
+}

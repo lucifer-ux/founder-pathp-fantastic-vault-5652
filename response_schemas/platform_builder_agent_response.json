@@ -1,0 +1,50 @@
+{
+  "agent_name": "Platform Builder Agent",
+  "agent_id": "69ec5416faf2562dd1132bea",
+  "description": "Assesses online presence needs, recommends platforms, generates Lyzr Architect prompt, and presents journey summary",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "platform_recommendations": [
+      {
+        "platform": "string",
+        "purpose": "string",
+        "recommendation": "string",
+        "setup_steps": "string"
+      }
+    ],
+    "lyzr_architect_prompt": "string",
+    "journey_summary": {
+      "stages_completed": "string",
+      "reference_numbers": "string",
+      "upcoming_dates": "string",
+      "ongoing_obligations": "string"
+    },
+    "next_steps": [
+      "string"
+    ],
+    "message": "string"
+  },
+  "example_response": {
+    "platform_recommendations": [
+      {
+        "platform": "sample string",
+        "purpose": "sample string",
+        "recommendation": "sample string",
+        "setup_steps": "sample string"
+      }
+    ],
+    "lyzr_architect_prompt": "sample string",
+    "journey_summary": {
+      "stages_completed": "sample string",
+      "reference_numbers": "sample string",
+      "upcoming_dates": "sample string",
+      "ongoing_obligations": "sample string"
+    },
+    "next_steps": [
+      "sample string"
+    ],
+    "message": "sample string"
+  }
+}
